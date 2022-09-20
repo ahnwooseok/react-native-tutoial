@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from './pages/Home'
+import Second from './pages/Second'
 
 export default function App() {
   
@@ -12,7 +13,8 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="second" component={Second} />
       </Stack.Navigator>
     </NavigationContainer>
   );
